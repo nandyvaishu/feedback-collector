@@ -10,8 +10,9 @@ COPY backend/package*.json ./
 # Install project dependencies
 RUN npm install
 
-# Expose the port your app runs on
-EXPOSE 3000
+# Copy application code to the working directory
+COPY backend/. .
 
 # Define the command to run your app
-CMD [ "npm", "start" ]
+EXPOSE 3000
+CMD ["npm", "start"]
