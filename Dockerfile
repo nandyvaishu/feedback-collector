@@ -1,5 +1,5 @@
 # Use an official Node.js runtime as a parent image
-FROM node:18backend/node_modules
+FROM node:18docker build -t your-image-name .
 
 
 # Set the working directory in the container
